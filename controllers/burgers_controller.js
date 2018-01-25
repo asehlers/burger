@@ -20,7 +20,7 @@ router.get("/", function(req, res) {
 router.post("/api/burgers", function(req, res) {
   console.log("burgers_controller.js in post");
   burger.insertOne([
-    "name"
+    "burger_name"
   ], [
     req.body.name
   ], function(result) {
